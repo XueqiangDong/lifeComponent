@@ -27,9 +27,10 @@ export class LifeComponent implements OnInit, OnChanges, DoCheck, AfterContentIn
   name: string;
 
   logIt(msg: string) {
-    let msgNew: string;
-    msgNew = '#' + logIndex++ + ',' + msg;
-    console.log(msgNew);
+    // let msgNew: string;
+    // msgNew = '#' + logIndex++ + ',' + msg;
+    // console.log(msgNew);
+    console.log('#' + logIndex++ + ',' + msg);
   }
 
   ngOnInit() {

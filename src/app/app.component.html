@@ -1,1 +1,29 @@
-<app-life [name]="title"></app-life>
+<!--&lt;!&ndash;<app-life [name]="title"></app-life>&ndash;&gt;-->
+<!--<div class="parent">-->
+<!--<h2>我是父组件</h2>-->
+<!--<div>-->
+<!--问候语：<input type="text" [(ngModel)]="greeting">-->
+<!--</div>-->
+<!--<div>-->
+<!--姓名：<input type="text" [(ngModel)]="user.name">-->
+<!--</div>-->
+<!--<app-child [greeting]="greeting" [user]="user"></app-child>-->
+<!--</div>-->
+<!--<app-child2 #child21></app-child2>-->
+<!--<app-child2 #child22></app-child2>-->
+<!--<button (click)="child22.greeting('Jerry')" type="button" class="btn">调用child22的greeting方法</button>-->
+<!--<div>信息{{message}}</div>-->
+<!--<div>-->
+<!--<h2>这是父组件</h2>-->
+<!--<div>这个div定义在父组件中</div>-->
+<!--<app-child>-->
+<!--<div class="header">这个div是父组件投影到子组件的header，title是{{title}}</div>-->
+<!--<div class="footer">这个div是父组件投影到子组件的footer</div>-->
+<!--</app-child>-->
+<!--</div>-->
+<!--<div [innerHTML]="divContent"></div>-->
+<!--<div>{{message}}</div>-->
+
+<a [routerLink]="['/']">child1</a>
+<a [routerLink]="['/child2']">child2</a>
+<router-outlet></router-outlet>
